@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nightwind.meal.activity.UpdateUserActivity"
+    android:layout_marginTop="16dp">
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_button_press"
+            android:padding="16dp"
+            android:clickable="true"
+            android:id="@+id/lr_name">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:text="@string/name"
+                android:layout_centerVertical="true"
+                android:id="@+id/lb_name"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:text="张三"
+                android:maxLength="20"
+                android:id="@+id/name"
+                android:singleLine="true"
+                android:layout_toRightOf="@id/lb_name"
+                android:layout_marginLeft="32dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_button_press"
+            android:clickable="true"
+            android:id="@+id/lr_delivery">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="16dp"
+                android:gravity="center_vertical"
+                android:id="@+id/lr_tel">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:text="@string/tel"
+                    android:id="@+id/lb_tel"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:text="15678385555"
+                    android:id="@+id/tel"
+                    android:maxLength="20"
+                    android:layout_toRightOf="@id/lb_tel"
+                    android:layout_marginLeft="32dp"
+                    android:singleLine="true"
+                    android:inputType="phone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="16dp"
+                android:paddingTop="8dp"
+                android:id="@+id/lr_address"
+                android:layout_below="@id/lr_tel">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:text="@string/address"
+                    android:id="@+id/lb_address"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:maxLength="100"
+                    android:text="桂林电子科技大学"
+                    android:id="@+id/address"
+                    android:layout_toRightOf="@id/lb_address"
+                    android:layout_marginLeft="32dp"
+                    android:singleLine="true"
+                    android:inputType="text" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="16dp"
+                android:paddingTop="8dp"
+                android:id="@+id/lr_smscode"
+                android:layout_below="@id/lr_address">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:text="@string/smscode"
+                    android:id="@+id/lb_smscode"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:maxLength="10"
+                    android:minWidth="96dp"
+                    android:text=""
+                    android:id="@+id/smscode"
+                    android:layout_toRightOf="@id/lb_smscode"
+                    android:layout_marginLeft="16dp"
+                    android:singleLine="true"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/requestSmscode"
+                    android:text="获取验证码"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/smscode"
+                    android:layout_marginLeft="16dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColor="@android:color/white"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:background="@drawable/button_login_press"
+        android:text="@string/commit"
+        android:layout_below="@id/content"/>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nightwind.meal" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- sms code permission-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HttpsTestActivity"
+            android:label="@string/title_activity_https_test" >
+        </activity>
+        <activity
+            android:name=".activity.LoginRegisterActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".activity.UpdateUserActivity"
+            android:label="@string/title_activity_update_user" >
+        </activity>
+        <activity
+            android:name=".activity.OrderConfirmActivity"
+            android:label="@string/title_activity_order_confirm" >
+        </activity>
+        <activity
+            android:name=".activity.OrderDetailActivity"
+            android:launchMode="singleTask"
+            android:label="@string/title_activity_order_detail" >
+        </activity>
+    </application>
+
+</manifest> <!-- <activity -->
+<!-- android:name=".activity.LoginRegisterActivity" -->
+<!-- android:label="@string/title_activity_login" -->
+<!-- android:parentActivityName=".activity.MainActivity" > -->
+<!-- <meta-data -->
+<!-- android:name="android.support.PARENT_ACTIVITY" -->
+<!-- android:value="com.nightwind.meal.activity.MainActivity" /> -->
+<!-- </activity> -->

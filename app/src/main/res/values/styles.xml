@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!-- Actionbar color -->
+        <item name="colorPrimary">#FF5722</item>
+        <!--Status bar color-->
+        <!--<item name="colorPrimaryDark">@color/accent_material_light</item>-->
+        <!--Window color-->
+        <!--<item name="android:windowBackground">@color/dim_foreground_material_dark</item>-->
+
+    </style>
+    <color name="activated_indicator">#FF7043</color>
+
+    <color name="red_logout">#F44336</color>
+    <color name="red_logout_press">#D50000</color>
+
+    <color name="green_login">#7CB342</color>
+    <color name="green_login_press">#558B2F</color>
+
+    <!-- A light Holo shade of blue -->
+    <color name="holo_blue_light">#ff33b5e5</color>
+
+    <color name="textGray">#424242</color>
+
+    <color name="translucent">#80000000</color>
+
+</resources>
